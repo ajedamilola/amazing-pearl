@@ -1,0 +1,70 @@
+@media only screen and ( max-width: 1000px ){
+    .float{
+        padding: 5% 3%;
+        height: auto;
+    }
+    .rightArrowStyles {
+        right: 5px;
+    }
+      
+    .skipArrowStyle{
+        left: 5px;
+    }
+}
+@media only screen and ( max-width: 900px ){
+    .float{
+        .rightcaroul{
+            .aimsg{
+                margin: 1% 3%;
+                width: 100%;
+            }
+            .circlefloat{
+                margin: 90% 0 0 auto;
+            }
+        }
+    }
+}
+@media only screen and ( max-width: 600px ){
+    .float{
+        flex-direction: column-reverse;
+        background-position: top;
+        .leftcaroul{
+            width: 100%;
+            .title{
+                font-size: 3rem;
+            }
+        }
+        .rightcaroul{
+            width: 100%;
+            height: 50%;
+            .circlefloat{
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+    .rightArrowStyles {
+        top: 30%;
+    }
+      
+    .skipArrowStyle{
+        top: 30%;
+    }
+}
+@media only screen and ( max-width: 300px ){
+    .float{
+        .rightcaroul{
+            height: 100px;
+            .circlefloat{
+                position: absolute;
+                z-index: -1;
+            }
+        }
+    }
+    .rightArrowStyles {
+        top: 20%;
+    }
+      
+    .skipArrowStyle{
+        top: 20%;
+    }
+}

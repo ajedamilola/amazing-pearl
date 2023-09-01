@@ -1,0 +1,53 @@
+#footer{
+    background-color: var(--bluebg);
+    padding: 5%;
+    color: white;
+    .foothat{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img{
+            width: 70px;
+        }
+        h2{
+            color: var(--golden);
+            text-transform: uppercase;
+        }
+
+        #footsocial{
+            width: 10%;
+            .icon{
+                color: white;
+                padding-left: 15%;
+                font-size: 20px;
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 4% 0;
+        padding-right: 12%;
+
+        h4{
+            padding: 7% 0;
+        }
+        
+        .footlink{
+            font-size: 13px;
+            padding: 5% 0;
+        }
+        .footlink:hover{
+            color: #777;
+        }
+    }
+}
+
+@media only screen and ( max-width: 800px ) {
+    footer{
+        flex-direction: column;
+    }
+}

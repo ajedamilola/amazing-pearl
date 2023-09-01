@@ -1,0 +1,29 @@
+.arrowsp, .arrowsn{
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 50px;
+    font-weight: 800;
+    position: absolute;
+    z-index: 1000;
+    align-items: center;
+    top: 0;
+    // margin: auto 1%;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(0,0,0,0) );
+    height: 100%;
+    
+}
+.arrowsp:hover, .arrowsn:hover{
+    color: rgba(0, 0, 0, 0.7);
+}
+.arrowsn{
+    right: 0;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.1), rgba(0,0,0,0) );
+}
+
+.slider{
+    img{
+        border-radius: 40px;
+        padding: 5%;
+        height: 50%;
+    }
+}

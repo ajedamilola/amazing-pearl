@@ -1,0 +1,119 @@
+.hat{
+    text-align: center;
+    background-color: var(--navhatbg);
+    color: var(--bluetext);
+    padding: 2% 0;
+    #search{
+        text-decoration: underline;
+        color: var(--bluetext);
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    background-color: var(--bluebg);
+    color: white;
+
+    img{
+        width: 70px;
+    }
+    h2{
+        color: var(--golden);
+        text-transform: uppercase;
+    }
+    
+    .menuvis{
+        display: none;
+        font-size: 2rem;
+        color: gray;
+
+        .menu{
+            cursor: pointer;
+            font-size: 2rem;
+            margin: 0 10px;
+        }
+        .menu.none{
+            display: none;
+        }
+    }
+
+    ul{
+        list-style: none;
+        padding: 7px;
+        display: flex;
+        justify-content: flex-end;
+        .navlinks{
+            font-size: 16px;
+            margin: 0 15px;
+            color: white;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 10px;
+            transition: 1s;
+        }
+        .navlinks:hover{
+            border-bottom: 2px solid var(--golden);
+        }
+        .navlinks.dail{
+            padding: 10%;
+            font-weight: 600;
+            border-radius: 5px;
+            background-color: var(--golden);
+            color: var(--bluetext);
+
+            
+        }
+        .navlinks.dail:hover{
+            background-color: var(--goldenhover);
+        }
+    }
+}
+.navbarbg{
+    background-color: var(--yellow);
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    transition: 0.8s ease-in-out;
+}
+
+@media only screen and ( max-width: 800px ) {
+    nav{
+        flex-direction: column;
+    }
+    .navbar{
+        
+        .notvisible{
+            display: none;
+        }
+        .menuvis{
+            display: block;
+            display: flex;
+            justify-content: end;
+        }
+    }
+    #nav{
+        transform: translateX(5%, 0);
+        height: 100vh;
+        border-top-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+        background-color: #ffd900f1;
+        ul{
+            text-align: center;
+            flex-direction: column;
+            margin: auto;
+            width: 100%;
+            padding: 10% 0;
+            li{
+                padding: 4%;
+                
+                
+                .navlinks{
+                    color: grey;
+                    font-size: 1.2rem;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

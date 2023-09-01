@@ -1,0 +1,136 @@
+#orange{
+    background-image: url('../../img/index.webp');
+}
+
+#grey{
+    background-image: url('../../img/index.webp');
+}
+
+#pink{
+    background-image: url('../../img/index.webp');
+}
+
+.float{
+    padding: 3% 7%;
+    height: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    .leftcaroul{
+        width: 40%;
+        padding: 5% 2%;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, 0.747);
+        .title{
+            color: var(--blacktext);
+            font-size: 40px;
+            text-align: left;
+            text-decoration: none;
+        }
+        .title:hover{
+            color: var(--link);
+        }
+
+        p{
+            margin: 10% 0;
+        }
+
+        .msg{
+            padding: 2% 8%;
+            border: 1px solid var(--golden);
+            background-color: var(--golden);
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+        }
+        .msg:hover{
+            border: 1px solid var(--golden);
+            background-color: transparent;
+        }
+    }
+    
+}
+
+.slideStylesWidthBackground{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    
+
+}
+
+
+.rightArrowStyles {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 20px;
+    color: grey;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+  
+.skipArrowStyle{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 20px;
+    color: grey;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.blank{
+    display: none;
+}
+
+.mleft{
+    margin-left: -150%;
+}
+
+.dotsContainerStyles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3% 0;
+}
+  
+.dot{
+    color: transparent;
+    border-radius: 50%;
+    background-color: #E0E0E0 ;
+    border: 5px solid #EBEBEB;
+    font-size: 30px;
+    height: 20px;
+    width: 20px;
+}
+
+.dot.active{
+    background-color: #0000ff;
+    border: 5px solid #E0E0E0 ;
+    height: 20px;
+    width: 20px;
+}
+
+
+.imgcar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+}

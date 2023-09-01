@@ -1,0 +1,27 @@
+.homeclient{
+    padding: 3%;
+    border-radius: 3px;
+    background-color: white;
+    margin: 1%;
+    width: 30%;
+    height:max-content;
+    text-align: left;
+
+    h2{
+        font-weight: 300;
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+    h4{
+        margin-top: 7%;
+    }
+}
+
+@media only screen and ( max-width: 800px ) {
+    .homeclient{
+        width: 100%;
+    }
+}

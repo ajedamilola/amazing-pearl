@@ -1,0 +1,31 @@
+@media only screen and ( max-width: 800px ) {
+    .homeabout{
+        padding: 8% 1%;
+    }
+    .ready{
+        padding: 8% 1%;
+    }
+    .homeclientsay{
+        flex-direction: column;
+    }
+    .kids{
+        flex-direction: column;
+        .left,.right{
+            width: 100%;
+        }
+    }
+    .different{
+        padding: 5% 1%;
+    }
+    .tailored,.inner,.caregivers{
+        .left,.right{
+            width: 100%;
+        }
+    }
+    .tailored,.caregivers{
+        flex-direction: column;
+    }
+    .inner{
+        flex-direction: column-reverse;
+    }
+}
