@@ -5,12 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import img1 from '../../img/img1.jpg'
-import img2 from '../../img/img2.jpg'
-import img3 from '../../img/img3.jpg'
-import img4 from '../../img/img4.jpg'
-import img5 from '../../img/img5.jpg'
-import img6 from '../../img/img6.jpg'
+
 
 // customized next arrow
 function SampleNextArrow(props) {
@@ -84,7 +79,7 @@ function SampleNextArrow(props) {
 };
 
 
-const Slide = () => {
+const Slide = ({img1, img2, img3, img4, img5, img6}) => {
   return (
     <div>
         <Slider {...settings} className="slider">

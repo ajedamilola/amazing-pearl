@@ -18,6 +18,12 @@ import img6 from '../../img/index6.webp'
 import img7 from '../../img/index7.webp'
 import img8 from '../../img/index8.webp'
 import Dropdownfaq from '../../components/dropdownfaq/Dropdownfaq'
+import image1 from '../../img/img1.jpg'
+import image2 from '../../img/childone.jpg'
+import image3 from '../../img/img3.jpg'
+import image4 from '../../img/childtwo.jpg'
+import image5 from '../../img/img5.jpg'
+import image6 from '../../img/childthree.jpg'
 
 const Home = () => {
   const slides = [
@@ -30,7 +36,7 @@ const Home = () => {
         <Navbar/>
         <header>
           <Carousel slides={slides} />
-          <div className="slide"><Slide/></div>
+          <div className="slide"><Slide img1={image1} img2={image2} img3={image3} img4={image4} img5={image5} img6={image6}  /></div>
         </header>
         <main>
           <section className='homeabout'>

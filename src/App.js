@@ -5,6 +5,8 @@ import{
   Route,
 } from "react-router-dom"
 import Home from './pages/home/Home';
+import Adults from './pages/adults/Adults';
+import Kids from './pages/kids/Kids';
 
 
 function App() {
@@ -14,6 +16,12 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Home />}/>
+        </Route>
+        <Route path="/adults">
+          <Route index element={<Adults />}/>
+        </Route>
+        <Route path="/kids">
+          <Route index element={<Kids />}/>
         </Route>
       </Routes>
     </BrowserRouter>

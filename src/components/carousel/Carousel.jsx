@@ -33,7 +33,7 @@ const Carousel = ({ slides }) => {
           {/* style={{backgroundImage: `url(${slides[currentIndex].url})`}} */}
         <motion.div initial={{ opacity: 0.5 }} animate={{ opacity: 1 }} transition={{duration: 2}} key={currentIndex} className="float df" id={slides[currentIndex].color} >
             <div className="leftcaroul">
-              <motion.h1 initial={{x: -200}} animate={{ x: 0 }} transition={{duration: 2, type: 'spring'}} key={currentIndex} ><Link className="title" to={'/services'}>{slides[currentIndex].title}</Link></motion.h1>
+              <motion.h1 initial={{x: -200}} animate={{ x: 0 }} transition={{duration: 2, type: 'spring'}} key={currentIndex} ><Link className="title" to={slides[currentIndex].link}>{slides[currentIndex].title}</Link></motion.h1>
               <div className="line"></div>
               <p>{slides[currentIndex].words}</p>
               <Link to={slides[currentIndex].link} className="bluebtn msg">{slides[currentIndex].message}</Link>
