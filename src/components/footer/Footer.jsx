@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
+import LanguageIcon from '@mui/icons-material/Language';
 
 const Footer = () => {
   return (
@@ -13,7 +16,6 @@ const Footer = () => {
         <div className="foothat">
             <Link to={'/'} className='link' style={{display: 'flex', alignItems: 'center'}}>
                 <img src={logo} alt="Amazing Pearl Logo" />
-                <h2>Amazing Pearl</h2>
             </Link>
             <div id='footsocial'>
                 <Link><FontAwesomeIcon icon={faFacebookF} className='icon' /></Link>
@@ -22,58 +24,29 @@ const Footer = () => {
             </div>
         </div>
         <footer>
-            <div className="footstarted">
-                <Link to={'/started'} className='link'><h4>Getting Started</h4></Link>
+            <div className="feet">
+                <h2>Important Links</h2>
                 <ul>
-                    <li className='footlink'><Link to={'/started'} className='link'><p>Get the care you need</p></Link></li>
-                    <li className='footlink'><Link to={'/started'} className='link'><p>What is home care?</p></Link></li>
-                    <li className='footlink'><Link to={'/started'} className='link'><p>When is home care helpful</p></Link></li>
-                    <li className='footlink'><Link to={'/started'} className='link'><p>How does home care work?</p></Link></li>
-                    <li className='footlink'><Link to={'/started'} className='link'><p>How much does home care cost?</p></Link></li>
-                    <li className='footlink'><Link to={'/started'} className='link'><p>Understanding your options</p></Link></li>
-                    <li className='footlink'><Link to={'/started'} className='link'><p>Ready to get started</p></Link></li>
-                    <li className='footlink'><Link to={'/started'} className='link'><p>FAQs</p></Link></li>
+                    <li><Link className='footlink' to={'/about'}>WHO WE SERVE</Link></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">WHAT WE DO</a></li>
                 </ul>
             </div>
-            <div className="footservice">
-                <Link to={'/services'} className='link'><h4>Services</h4></Link>
+            <div className="feet">
+                <h2>Important Links</h2>
                 <ul>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>Home Care</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>Memory Care at Home</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>Geriatric Care Management</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>Specialized Care</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>Alzheimer’s and Dementia</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>Parkinson’s</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>Heart Health</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>Cancer</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>Hospital to Home</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>After a Stroke</p></Link></li>
-                    <li className='footlink'><Link to={'/services'} className='link'><p>End-of-Life Care</p></Link></li>
+                    <li><a href="">GET A QUOTE</a></li>
+                    <li><Link className='footlink' to={'/contact'}>CONTACT US</Link></li>
+                    <li><a href="">ISO CERTIFICATION</a></li>
                 </ul>
             </div>
-            <div className="footlearn">
-                <Link to={'/learning'} className='link'><h4>Learning</h4></Link>
+            <div className="feet">
+                <h2>Get In Touch</h2>
                 <ul>
-                    <li className='footlink'><Link to={'/learning'} className='link'><p>Learning For Families</p></Link></li>
-                    <li className='footlink'><Link to={'/learning'} className='link'><p>Learning for Professionals</p></Link></li>
-                </ul>
-            </div>
-            <div className="footcareer">
-                <Link to={'/careers'} className='link'><h4>Careers</h4></Link>
-                <ul>
-                    <li className='footlink'><Link to={'/careers'} className='link'><p>Caregivers</p></Link></li>
-                    <li className='footlink'><Link to={'/careers'} className='link'><p>Corporate and Field Offices</p></Link></li>
-                </ul>
-            </div>
-            <div className="footabout">
-                <Link to={'/about'} className='link'><h4>About Us</h4></Link>
-                <ul>
-                    <li className='footlink'><Link to={'/about'} className='link'><p>Our Approach</p></Link></li>
-                    <li className='footlink'><Link to={'/about'} className='link'><p>Caregivers</p></Link></li>
-                    <li className='footlink'><Link to={'/about'} className='link'><p>Care Team</p></Link></li>
-                    <li className='footlink'><Link to={'/about'} className='link'><p>Leadership</p></Link></li>
-                    <li className='footlink'><Link to={'/about'} className='link'><p>Referral Partners</p></Link></li>
-                    <li className='footlink'><Link to={'/about'} className='link'><p>Press</p></Link></li>
+                    <li><CallIcon className='icons'/> Toll Free: +12409357172</li>
+                    <li><CallIcon className='icons'/> 12409357172</li>
+                    <li><EmailIcon className='icons'/> info@Amazingpearlhomehealth.com</li>
+                    <li><LanguageIcon className='icons'/> Amazingpearlhomehealth.com</li>
                 </ul>
             </div>
         </footer>

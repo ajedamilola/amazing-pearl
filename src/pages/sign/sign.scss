@@ -1,0 +1,92 @@
+#signpg{
+    height: 150vh;
+    background-color: var(--bluebg);
+    overflow: hidden;
+    #b2{
+        top: 40%;
+        left: 0;
+    }
+
+    #b5{
+        top: 15%;
+        right: 0;
+        z-index: 0;
+        transform: rotate(180deg);
+    }
+
+    #b6{
+        bottom: 5%;
+        left: 45%;
+        z-index: 0;
+    }
+}
+.signpg{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    
+    color: white;
+
+    h1{
+        font-weight: 600;
+        font-size: 48px;
+        align-self: center;
+        padding-left: 7%;
+        width: 50%;
+        span{
+            font-weight: 800;
+            font-size: 70px;
+            color: var(--yellow);
+        }
+        
+    }
+    .signup{
+        background-color: #00000073;
+        border-radius: 18px;
+        padding: 3% 5% 0;
+        width: 50%;
+        label, #reg{
+            font-weight: 600;
+            font-size: 20px;
+        }
+        input{
+            border: 2px solid var(--yellow);
+            border-radius: 4px;
+            margin: 5% 0;
+            padding: 3%;
+            background: transparent;
+            color: white;
+            width: 100%;
+        }
+        input#reg{
+            background-color: var(--yellow);
+            border-radius: 15px;
+            padding: 3%;
+            // width: 100%;
+            margin: 7% 0;
+            text-align: center;
+            color: black;
+            // font-weight: 600;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        input#reg:hover{
+            background-color: var(--yellowhover);
+        }
+    }
+}
+@media only screen and ( max-width: 750px ){
+    #signpg{
+        overflow: visible;
+        height: auto;
+        #b1{
+            bottom: 0;
+        }
+    }
+    .signpg{
+        flex-direction: column;
+        h1, .signup{
+            width: 100%;
+        }
+    }
+}

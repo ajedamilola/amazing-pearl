@@ -1,0 +1,106 @@
+.kids{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left{
+        width: 50%;
+        padding: 5%;
+        color: var(--bluebg);
+        h1{
+            font-weight: 300;
+        }
+    }
+}
+.whole{
+    padding: 0 3%;
+    .wholeinner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3% 0;
+    
+        .left{
+            width: 45%;
+            padding: 1%;
+            p{
+                margin: 2% auto;
+            }
+    
+            #tailored{
+                font-weight: 600;
+                font-size: 20px;
+                color: var(--link);
+                text-decoration: none;
+            }
+            #tailored:hover{
+                span{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .right{
+            width: 55%;
+            padding: 1%;
+            img{
+                width: 100%;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+.imgflex{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+
+    img{
+        width: 30%;
+        border-radius: 3px;
+    }
+}
+.about{
+    padding: 7% 3%;
+    background-color: var(--creambg);
+    
+    .balanced{
+        text-align: center;
+        padding: 5% 10%;
+        p{
+            margin: 2% auto;
+        }
+        .links{
+            display: flex;
+            justify-content: space-between;
+            gap: 3%;
+        }
+        .dial{
+            padding: 15px 30px;
+            font-weight: 600;
+            border-radius: 5px;
+            background-color: var(--golden);
+            color: var(--bluetext);
+            border: 1px solid var(--golden);
+        }
+        .dial:hover{
+            background-color: white;
+        }
+    }
+}
+.plink{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--link);
+    text-decoration: none;
+}
+.plink:hover{
+    span{
+        text-decoration: underline;
+    }
+}
+.careteam{
+    background-color: white;
+     .plink{
+        margin-top: 2%;
+    }
+}

@@ -1,0 +1,30 @@
+.zip{
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    input{
+        width: 80%;
+        padding: 3% 5%;
+        font-size: 20px;
+        // color: #BBB7B7;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        border: 1px solid var(--yellow);
+    }
+    button{
+        cursor: pointer;
+        background-color: var(--yellow);
+        border: none;
+        outline: none;
+        color: white;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        border: 1px solid var(--yellow);
+        padding: 3%;
+    }
+    button:focus{
+        border: none;
+        outline: none;
+    }
+}

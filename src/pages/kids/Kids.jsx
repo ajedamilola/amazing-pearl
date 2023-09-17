@@ -31,11 +31,11 @@ const Kids = () => {
     <div>
         <Navbar/>
         <header>
-          <motion.div initial={{ opacity: 0.5 }} animate={{ opacity: 1 }} transition={{duration: 2}} className="float df" id='grey'>
+          <motion.div initial={{ opacity: 0.5 }} animate={{ opacity: 1 }} transition={{duration: 2}} className="float df" id='pink'>
             <div className="leftcaroul">
-              <motion.h1 initial={{x: -200}} animate={{ x: 0 }} transition={{duration: 2, type: 'spring'}} ><Link className="title" to={'/services'}>Care for kids.</Link></motion.h1>
+              <motion.h1 initial={{x: -200}} animate={{ x: 0 }} transition={{duration: 2, type: 'spring'}} ><Link className="title" to={'/services'}>Kids care, <br /> Our mission.</Link></motion.h1>
               <div className="line"></div>
-              <p>It’s what we do every day to help our clients live well at home. We’re TheKey, formerly Home Care Assistance, the senior care experts that families trust the most.</p>
+              <p>Our mission is to provide comprehensive and passionate care to kids. WHether you're looking for physical therapy, assistance with cognitive development, or just someone to talk to, we're here to help.</p>
               <Link to={'/services'} className="bluebtn msg">Check it out</Link>
             </div>
           </motion.div>
@@ -46,11 +46,11 @@ const Kids = () => {
             <h1>We offer more than great caregivers. We’ll be your expert guide along this journey.</h1>
             <p>Whether you need respite care, a little help at home to live independently, or 24/7 care, we can design a personalized Care Plan that meets your needs and budget. Every caregiver is expertly trained and backed by a dedicated Care Team of in-house experts. So you’ll get the care you need and the support you deserve—and always stay informed and in control.</p>
           </section>
-          <img src={random} alt="" />
+          <img src={random} className='img' alt="" />
           <section className="ready">
             <Link className='headlink' to={'./services'}>Ready to get the care you need?</Link>
             <p>Help us understand your care needs. Then we’ll set up a free phone consultation so you can get the right support and services to live and age successfully at home.</p>
-            <Link to={'./services'} id='readylink' >Get Started</Link>
+            <Link to={'/services'} id='readylink' >Get Started</Link>
           </section>
           <section className="homeclients">
             <h1>Clients trust our caregivers and our service.</h1>
@@ -83,7 +83,7 @@ const Kids = () => {
               <img src={img2} alt="" />
             </div>
             <div className="right">
-              <Link to={'./kids'} className='headlink'>A Care Plan Tailored to Kids</Link>
+              <Link to={'/kids'} className='headlink'>A Care Plan Tailored to Kids</Link>
               <div className="line"></div>
               <p>It starts with a focus on joy. Before beginning care, we get to know you or your loved one, as a person not a patient, learning about your favorite foods, music, hobbies, passions—the things that bring pleasure and purpose to each day—as well as your care needs. Then we design a personalized Care Plan just for you.</p>
               <ul>
@@ -91,14 +91,14 @@ const Kids = () => {
                 <li>Help with personal care</li>
                 <li>Support for meaningful activities and daily engagement</li>
               </ul>
-              <Link id='tailored' to={'./kids'}><span>Learn More</span>  ></Link>
+              <Link id='tailored' to={'/kids'}><span>Learn More</span>  ></Link>
             </div>
           </section>
           <section className="whole">
             <div className="slimline"></div>
             <div className="inner">
               <div className="left">
-                <Link to={'./adults'} className='headlink'>Whole Care for the Whole Person</Link>
+                <Link to={'/adults'} className='headlink'>Whole Care for the Whole Person</Link>
                 <div className="line"></div>
                 <p>Our proprietary Balanced Care Method™ emphasizes a healthy mind, body, and spirit. This holistic approach focuses on nutrition, engagement, social connection, and overall wellness so our clients can live happier, healthier lives at home.</p>
                 <div className="checks">
@@ -113,7 +113,7 @@ const Kids = () => {
                     <li>Sufficient sleep</li>
                   </ul>
                 </div>
-                <Link id='tailored' to={'./adults'}><span>Learn More</span>  ></Link>
+                <Link id='tailored' to={'/adults'}><span>Learn More</span>  ></Link>
               </div>
               <div className="right">
                 <img src={img3} alt="" />
@@ -126,11 +126,11 @@ const Kids = () => {
               <img src={img4} alt="" />
             </div>
             <div className="right">
-              <Link to={'./started'} className='headlink'>Team-Based Approach to Care</Link>
+              <Link to={'/join'} className='headlink'>Team-Based Approach to Care</Link>
               <div className="line"></div>
               <p>Behind every caregiver is a full-time Care Team of in-house experts, providing oversight and guidance to our caregivers—and support to you and your family.</p>
               <Dropdownfaq/>
-              <Link id='tailored' to={'./started'}><span>Learn More</span>  ></Link>
+              <Link id='tailored' to={'/join'}><span>Learn More</span>  ></Link>
             </div>
           </section>
           <section className="caregivers">
@@ -138,7 +138,7 @@ const Kids = () => {
               <h1>Expertly Trained Caregivers</h1>
               <div className="line"></div>
               <p>We start by hiring great caregivers who genuinely love caring for others. Then we give them the training, tools, and support to be even better care professionals. Every caregiver is our employee—not a contractor, expertly trained by our team and professionally managed to ensure their success and your satisfaction. Since safety is always our top priority, all of our caregivers are interviewed, thoroughly vetted for skills and experience, and background checked.</p>
-              <Link id='tailored' to={'./about'}><span>Learn More</span>  ></Link>
+              <Link id='tailored' to={'/about'}><span>Learn More</span>  ></Link>
             </div>
             <div className="right">
               <table>

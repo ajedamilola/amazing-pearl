@@ -6,17 +6,17 @@ import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import Carousel from '../../components/carousel/Carousel'
 import Slide from '../../components/slide/Slide'
-import random from '../../img/random.webp'
+import random from '../../img/mainpage.jpg'
 import {Link} from 'react-router-dom'
 import Homeclient from '../../components/homeclient/Homeclient'
 import Faq from '../../components/faq/Faq'
-import img2 from '../../img/index2.webp'
-import img3 from '../../img/index3.webp'
-import img4 from '../../img/index4.webp'
-import img5 from '../../img/index5.webp'
-import img6 from '../../img/index6.webp'
-import img7 from '../../img/index7.webp'
-import img8 from '../../img/index8.webp'
+import img2 from '../../img/kid.jpg'
+import img3 from '../../img/food.jpg'
+import img4 from '../../img/team.jpg'
+import img5 from '../../img/team1.jpg'
+import img6 from '../../img/team2.jpg'
+import img7 from '../../img/team3.jpg'
+import img8 from '../../img/team4.jpg'
 import Dropdownfaq from '../../components/dropdownfaq/Dropdownfaq'
 import image1 from '../../img/img1.jpg'
 import image2 from '../../img/childone.jpg'
@@ -24,12 +24,13 @@ import image3 from '../../img/img3.jpg'
 import image4 from '../../img/childtwo.jpg'
 import image5 from '../../img/img5.jpg'
 import image6 from '../../img/childthree.jpg'
+import Ready from '../../components/ready/Ready'
 
 const Home = () => {
   const slides = [
-    { title: "Care with love.", message: "Get Started", link: './services', color: "orange", words: 'It’s what we do every day to help our clients live well at home. We’re TheKey, formerly Home Care Assistance, the senior care experts that families trust the most.'},
-    { title: "Care for elderly.", message: "Find care", link: './adults', color: "grey", words: 'It’s what we do every day to help our clients live well at home. We’re TheKey, formerly Home Care Assistance, the senior care experts that families trust the most.'  },
-    { title: "Care for little ones.", message: "Check it out", link: './kids', color: "pink", words: 'It’s what we do every day to help our clients live well at home. We’re TheKey, formerly Home Care Assistance, the senior care experts that families trust the most.'  },
+    { title: "Family care,", message: "Get Started", link: './services', color: "orange", words: "Our mission is to provide families with the care they need and deserve. With a team of experts, we'll help you navigate the challenges of caregiving and ensure that your loved ones receive the best possible care."},
+    { title: "Elderly care,", message: "Find care", link: './adults', color: "grey", words: "Our mission is to provide adults with the care they need and deserve. Whether you're looking for in-home services, assitance with mobility, or just someone to talk to, we're here to help." },
+    { title: "Kids care,", message: "Check it out", link: './kids', color: "pink", words: "Our mission is to provide comprehensive and passionate care to kids. WHether you're looking for physical therapy, assistance with cognitive development, or just someone to talk to, we're here to help."  },
   ];
   return (
     <div>
@@ -43,12 +44,8 @@ const Home = () => {
             <h1>We offer more than great caregivers. We’ll be your expert guide along this journey.</h1>
             <p>Whether you need respite care, a little help at home to live independently, or 24/7 care, we can design a personalized Care Plan that meets your needs and budget. Every caregiver is expertly trained and backed by a dedicated Care Team of in-house experts. So you’ll get the care you need and the support you deserve—and always stay informed and in control.</p>
           </section>
-          <img src={random} alt="" />
-          <section className="ready">
-            <Link className='headlink' to={'./services'}>Ready to get the care you need?</Link>
-            <p>Help us understand your care needs. Then we’ll set up a free phone consultation so you can get the right support and services to live and age successfully at home.</p>
-            <Link to={'./services'} id='readylink' >Get Started</Link>
-          </section>
+          <img src={random} className='img' alt="" />
+          <Ready/>
           <section className="homeclients">
             <h1>Clients trust our caregivers and our service.</h1>
             <p className="line"></p>
@@ -73,14 +70,14 @@ const Home = () => {
           </section>
           <section className="different">
             <h1>What makes Amazing Pearl different?</h1>
-            <p>Quality. Our people. And we really know our business. Every care visit is backed by over 20 years of experience providing over a million hours of exceptional service to families who expect the best care for their loved ones.</p>
+            <p>Amazing pearl is a residential service agency that aims to improve the quality of life of our clients through the delivery of amazing excellent cpmpassionate care and extraordinary services in the comfort of their homes while being recognized as an employer of first choice. Our mission is to create a compassionate and comfortable enviroment for both the adults and pediatrics entrusted in our care and foster a healthy relationship amongst them and their family.</p>
           </section>
           <section className="tailored">
             <div className="left">
               <img src={img2} alt="" />
             </div>
             <div className="right">
-              <Link to={'./kids'} className='headlink'>A Care Plan Tailored to Kids</Link>
+              <Link to={'/kids'} className='headlink'>A Care Plan Tailored to Kids</Link>
               <div className="line"></div>
               <p>It starts with a focus on joy. Before beginning care, we get to know you or your loved one, as a person not a patient, learning about your favorite foods, music, hobbies, passions—the things that bring pleasure and purpose to each day—as well as your care needs. Then we design a personalized Care Plan just for you.</p>
               <ul>
@@ -88,14 +85,14 @@ const Home = () => {
                 <li>Help with personal care</li>
                 <li>Support for meaningful activities and daily engagement</li>
               </ul>
-              <Link id='tailored' to={'./kids'}><span>Learn More</span>  ></Link>
+              <Link id='tailored' to={'/kids'}><span>Learn More</span>  ></Link>
             </div>
           </section>
           <section className="whole">
             <div className="slimline"></div>
             <div className="inner">
               <div className="left">
-                <Link to={'./adults'} className='headlink'>Whole Care for the Whole Person</Link>
+                <Link to={'/adults'} className='headlink'>Whole Care for the Whole Person</Link>
                 <div className="line"></div>
                 <p>Our proprietary Balanced Care Method™ emphasizes a healthy mind, body, and spirit. This holistic approach focuses on nutrition, engagement, social connection, and overall wellness so our clients can live happier, healthier lives at home.</p>
                 <div className="checks">
@@ -110,7 +107,7 @@ const Home = () => {
                     <li>Sufficient sleep</li>
                   </ul>
                 </div>
-                <Link id='tailored' to={'./adults'}><span>Learn More</span>  ></Link>
+                <Link id='tailored' to={'/adults'}><span>Learn More</span>  ></Link>
               </div>
               <div className="right">
                 <img src={img3} alt="" />
@@ -123,19 +120,19 @@ const Home = () => {
               <img src={img4} alt="" />
             </div>
             <div className="right">
-              <Link to={'./started'} className='headlink'>Team-Based Approach to Care</Link>
+              <Link to={'/join'} className='headlink'>Team-Based Approach to Care</Link>
               <div className="line"></div>
               <p>Behind every caregiver is a full-time Care Team of in-house experts, providing oversight and guidance to our caregivers—and support to you and your family.</p>
               <Dropdownfaq/>
-              <Link id='tailored' to={'./started'}><span>Learn More</span>  ></Link>
+              <Link id='tailored' to={'/join'}><span>Join Us</span>  ></Link>
             </div>
           </section>
           <section className="caregivers">
             <div className="left">
               <h1>Expertly Trained Caregivers</h1>
               <div className="line"></div>
-              <p>We start by hiring great caregivers who genuinely love caring for others. Then we give them the training, tools, and support to be even better care professionals. Every caregiver is our employee—not a contractor, expertly trained by our team and professionally managed to ensure their success and your satisfaction. Since safety is always our top priority, all of our caregivers are interviewed, thoroughly vetted for skills and experience, and background checked.</p>
-              <Link id='tailored' to={'./about'}><span>Learn More</span>  ></Link>
+              <p>We believe there’s more to caring for people than just providing in-home assistance. For decades, families have trusted Amzing Pearl for our expert guidance and experience to help them navigate every step of the aging journey.</p>
+              <Link id='tailored' to={'/about'}><span>Learn More</span>  ></Link>
             </div>
             <div className="right">
               <table>

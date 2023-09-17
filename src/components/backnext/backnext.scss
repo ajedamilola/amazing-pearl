@@ -1,0 +1,19 @@
+.backnext{
+    text-align: center;
+    .inner{
+        margin: 1% 0;
+        .button{
+            margin: 3% 1%;
+        }
+        #button{
+            border: 1px solid var(--yellow);
+            background: transparent;
+        }
+        #button:hover{
+            background-color: var(--yellowhover);
+        }
+    }
+    #hide{
+        display: none;
+    }
+}

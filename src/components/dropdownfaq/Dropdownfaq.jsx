@@ -32,7 +32,7 @@ const Dropdownfaq = () => {
   return (
     <div className='dropfaqdiv'>
       {data.map((item, i)=>(
-        <div className="item">
+        <div className="dropitem">
           <div className={selected === i ? 'title df show' : 'title df'} onClick={() => toggle(i)}>
             <h2>{item.question}</h2>
             <span>{selected === i ? '-' : '+'}</span>

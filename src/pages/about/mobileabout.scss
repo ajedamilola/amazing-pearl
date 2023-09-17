@@ -1,0 +1,48 @@
+@media only screen and ( max-width: 800px ) {
+    .kids{
+        flex-direction: column;
+        .left,.right{
+            width: 100%;
+        }
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .normal, .imgflex{
+        flex-direction: column;
+        img{
+            width: 100%;
+            margin: 2% 0;
+        }
+    }
+    .whole .wholeinner{
+        .left,.right{
+            width: 100%;
+        }
+        
+    }
+    .about{
+        .balanced{
+            text-align: left;
+            padding: 5%;
+            h1{
+                font-size: 30px;
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+            }
+            .links{
+                flex-direction: column;
+                .plink{
+                    padding: 2% 0;
+                }
+            }
+        }
+    }
+    .homeclients{
+        h1{
+            font-size: 30px;
+        }
+    }
+}

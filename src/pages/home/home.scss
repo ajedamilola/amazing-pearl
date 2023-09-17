@@ -13,30 +13,8 @@
     }
 }
 
-img{
+.img{
     width: 100%;
-}
-
-.ready{
-    text-align: center;
-    padding: 8% 20%;
-    background-color: var(--golden);
-    color: var(--blacktext);
-    
-    p{
-        margin-bottom: 5%;
-    }
-    #readylink{
-        text-decoration: none;
-        color: black;
-        padding: 1% 3%;
-        border-radius: 5px;
-        background-color: white;
-        border: 1px solid black;
-    }
-    #readylink:hover{
-        border: 1px solid white;
-    }
 }
 
 .homeclients{
@@ -94,6 +72,9 @@ img{
     .right{
         width: 50%;
         padding: 5%;
+        p{
+            margin: 2% auto;
+        }
 
         ul{
             margin: 5% 0;
@@ -116,50 +97,56 @@ img{
     }
 }
 
+
 .slimline{
     height: 1px;
     width: 200px;
     background-color: var(--golden);
     margin: auto;
 }
-.inner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3% 0;
-
-    .left{
-        width: 50%;
-        padding: 5%;
-
-        .checks{
-            margin: 5% 0;
-            font-size: 15px;
-            display: flex;
-            justify-content: space-between;
-
-            li{
+.whole{
+    .inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3% 0;
+    
+        .left{
+            width: 50%;
+            padding: 5%;
+            p{
+                margin: 2% auto;
+            }
+    
+            .checks{
                 margin: 5% 0;
+                font-size: 15px;
+                display: flex;
+                justify-content: space-between;
+    
+                li{
+                    margin: 5% 0;
+                }
+            }
+            #tailored{
+                font-weight: 600;
+                font-size: 20px;
+                color: var(--link);
+                text-decoration: none;
+            }
+            #tailored:hover{
+                span{
+                    text-decoration: underline;
+                }
             }
         }
-        #tailored{
-            font-weight: 600;
-            font-size: 20px;
-            color: var(--link);
-            text-decoration: none;
-        }
-        #tailored:hover{
-            span{
-                text-decoration: underline;
+        .right{
+            width: 50%;
+            padding: 3%;
+            img{
+                width: 100%;
+                border-radius: 3px;
             }
-        }
-    }
-    .right{
-        width: 50%;
-        padding: 3%;
-        img{
-            width: 100%;
-            border-radius: 3px;
         }
     }
 }

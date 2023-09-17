@@ -11,17 +11,13 @@
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     padding: 1% 5%;
     background-color: var(--bluebg);
     color: white;
 
     img{
-        width: 70px;
-    }
-    h2{
-        color: var(--golden);
-        text-transform: uppercase;
+        width: 200px;
     }
     
     .menuvis{
@@ -56,16 +52,15 @@ nav{
             border-bottom: 2px solid var(--golden);
         }
         .navlinks.dail{
-            padding: 10%;
+            padding: 5% 10%;
             font-weight: 600;
             border-radius: 5px;
             background-color: var(--golden);
             color: var(--bluetext);
-
-            
+            border: 1px solid var(--golden);
         }
         .navlinks.dail:hover{
-            background-color: var(--goldenhover);
+            background-color: white;
         }
     }
 }
@@ -95,9 +90,6 @@ nav{
     #nav{
         transform: translateX(5%, 0);
         height: 100vh;
-        border-top-left-radius: 30%;
-        border-bottom-right-radius: 30%;
-        background-color: #ffd900f1;
         ul{
             text-align: center;
             flex-direction: column;
@@ -113,6 +105,11 @@ nav{
                     font-size: 1.2rem;
                     font-weight: 800;
                 }
+            }
+            .navlinks.dail{
+                padding: 5%;
+                color: var(--bluetext);
+                font-weight: 600;
             }
         }
     }

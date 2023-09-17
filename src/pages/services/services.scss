@@ -1,0 +1,51 @@
+.service{
+    background-color: white;
+}
+.ourservices{
+    background-color: var(--creambg);
+    h3{
+        color: var(--link);
+        font-weight: 300;
+    }
+    .about{
+        padding-bottom: 0;
+        .balanced{
+            padding-bottom: 3%;
+        }
+    }
+    .serviceitems{
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+    }
+}
+.help{
+    background-color: var(--creambg);
+    padding: 5%;
+    .about{
+        padding: 0;
+        .balanced{
+            padding: 0;
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+}
+.nursing{
+    background-color: white;
+    padding: 5%;
+    .about{
+        padding: 0;
+        .balanced{
+            padding: 0;
+            background-color: white;
+        }
+    }
+}
+
+@media only screen and ( max-width: 750px ){
+    .serviceitems{
+        flex-direction: column;
+    }
+}
