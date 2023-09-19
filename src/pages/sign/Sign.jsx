@@ -20,15 +20,23 @@ const Sign = () => {
             <div className="signup">
                 <form action="">
                     <div className="details">
-                        <label htmlFor="">Name:</label><br />
+                        <label htmlFor="">First Name*:</label><br />
                         <input type="text" />
                     </div>
                     <div className="details">
-                        <label htmlFor="">Email:</label><br />
+                        <label htmlFor="">Last Name*:</label><br />
+                        <input type="text" />
+                    </div>
+                    <div className="details">
+                        <label htmlFor="">Email*:</label><br />
                         <input type="email" />
                     </div>
                     <div className="details">
-                        <label htmlFor="">Password:</label><br />
+                        <label htmlFor="">Phone Number*:</label><br />
+                        <input type="tel" />
+                    </div>
+                    <div className="details">
+                        <label htmlFor="">Password*:</label><br />
                         <input type="password" />
                     </div>
                     <Link to={'/register/stepone'} ><input id='reg' type="submit" value='Register' /></Link>

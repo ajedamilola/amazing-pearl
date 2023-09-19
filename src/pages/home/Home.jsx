@@ -25,6 +25,7 @@ import image4 from '../../img/childtwo.jpg'
 import image5 from '../../img/img5.jpg'
 import image6 from '../../img/childthree.jpg'
 import Ready from '../../components/ready/Ready'
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 const Home = () => {
   const slides = [
@@ -47,7 +48,7 @@ const Home = () => {
           <img src={random} className='img' alt="" />
           <Ready/>
           <section className="homeclients">
-            <h1>Clients trust our caregivers and our service.</h1>
+            <h1>Our clients' experiences.</h1>
             <p className="line"></p>
             <div className="homeclientsay">
               <Homeclient heading='Compassionate, Dedicated, and Hardworking' 
@@ -63,27 +64,27 @@ const Home = () => {
           </section>
           <section className='kids'>
             <div className="left">
-              <h1>Why take care of little Kids?</h1>
+              <h1>Invest in a better tomorrow.</h1>
               <div className="line"></div>
-              <p>Learn more about our new mission, our collective passion for caring for older adults and their families—and our vision to change how the world lives and ages at home.</p>
+              <p>Little kids are the future generation, and it is our duty to provide them with a safe and nuturing environment where they can learn and grow into well rounded imdividuals.</p>
             </div>
           </section>
           <section className="different">
             <h1>What makes Amazing Pearl different?</h1>
-            <p>Amazing pearl is a residential service agency that aims to improve the quality of life of our clients through the delivery of amazing excellent cpmpassionate care and extraordinary services in the comfort of their homes while being recognized as an employer of first choice. Our mission is to create a compassionate and comfortable enviroment for both the adults and pediatrics entrusted in our care and foster a healthy relationship amongst them and their family.</p>
+            <p>Amazing pearl is a Residential Service Agency that aims to improve the quality of life of our clients through the delivery of amazing excellent cpmpassionate care and extraordinary services in the comfort of their homes while being recognized as an employer of first choice. Our mission is to create a compassionate and comfortable enviroment for both the adults and pediatrics entrusted in our care and foster a healthy relationship amongst them and their family.</p>
           </section>
           <section className="tailored">
             <div className="left">
               <img src={img2} alt="" />
             </div>
             <div className="right">
-              <Link to={'/kids'} className='headlink'>A Care Plan Tailored to Kids</Link>
+              <Link to={'/kids'} className='headlink'>A Care Plan Just For Your Child</Link>
               <div className="line"></div>
-              <p>It starts with a focus on joy. Before beginning care, we get to know you or your loved one, as a person not a patient, learning about your favorite foods, music, hobbies, passions—the things that bring pleasure and purpose to each day—as well as your care needs. Then we design a personalized Care Plan just for you.</p>
+              <p>As parents, we want the best for our kids, and a care plan that meets their unique needs is crucial to archieving that. At Amazing Pearl, we understand that every child is different and needs different care. Our experts caregivers work closely with each family to develop a care plan just for their child. We are here to assist and provide the care your child deserves.</p>
               <ul>
-                <li>Assistance with daily activities</li>
-                <li>Help with personal care</li>
-                <li>Support for meaningful activities and daily engagement</li>
+                <li><TaskAltIcon className='icon'/>Assistance with daily activities</li>
+                <li><TaskAltIcon className='icon'/>Help with personal care</li>
+                <li><TaskAltIcon className='icon'/>Support for meaningful activities and daily engagement</li>
               </ul>
               <Link id='tailored' to={'/kids'}><span>Learn More</span>  ></Link>
             </div>
@@ -97,14 +98,14 @@ const Home = () => {
                 <p>Our proprietary Balanced Care Method™ emphasizes a healthy mind, body, and spirit. This holistic approach focuses on nutrition, engagement, social connection, and overall wellness so our clients can live happier, healthier lives at home.</p>
                 <div className="checks">
                   <ul>
-                    <li>Cognitive stimulation</li>
-                    <li>Physical activity</li>
-                    <li>Social engagement</li>
+                    <li><TaskAltIcon className='icon'/>Cognitive stimulation</li>
+                    <li><TaskAltIcon className='icon'/>Physical activity</li>
+                    <li><TaskAltIcon className='icon'/>Social engagement</li>
                   </ul>
                   <ul>
-                    <li>Nutrition</li>
-                    <li>Sense of calm</li>
-                    <li>Sufficient sleep</li>
+                    <li><TaskAltIcon className='icon'/>Nutrition</li>
+                    <li><TaskAltIcon className='icon'/>Sense of calm</li>
+                    <li><TaskAltIcon className='icon'/>Sufficient sleep</li>
                   </ul>
                 </div>
                 <Link id='tailored' to={'/adults'}><span>Learn More</span>  ></Link>
@@ -129,7 +130,7 @@ const Home = () => {
           </section>
           <section className="caregivers">
             <div className="left">
-              <h1>Expertly Trained Caregivers</h1>
+              <h1>Our Team of Experts</h1>
               <div className="line"></div>
               <p>We believe there’s more to caring for people than just providing in-home assistance. For decades, families have trusted Amzing Pearl for our expert guidance and experience to help them navigate every step of the aging journey.</p>
               <Link id='tailored' to={'/about'}><span>Learn More</span>  ></Link>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './helpitems.scss'
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 const helpleft = [
     'Companionship',
@@ -35,11 +36,11 @@ const Helpitems = ({name}) => {
         {name === 'help' ?
 
             helpleft.map((item, i)=>(
-                <li>{item}</li>
+                <li><TaskAltIcon className='icon'/>{item}</li>
             ))
             :
             nurseleft.map((item, i)=>(
-                <li>{item}</li>
+                <li><TaskAltIcon className='icon'/>{item}</li>
             ))
         }
         </ul>
@@ -47,11 +48,11 @@ const Helpitems = ({name}) => {
         {name === 'help' ?
 
             helpright.map((item, i)=>(
-                <li>{item}</li>
+                <li><TaskAltIcon className='icon'/>{item}</li>
             ))
             :
             nurseright.map((item, i)=>(
-                <li>{item}</li>
+                <li><TaskAltIcon className='icon'/>{item}</li>
             ))
         }
         </ul>

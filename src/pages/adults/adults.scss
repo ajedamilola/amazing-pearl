@@ -100,6 +100,8 @@
             font-size: 15px;
             li{
                 margin: 5% 0;
+                display: flex;
+                align-items: center;
             }
         }
         #tailored{
@@ -138,9 +140,14 @@
                 font-size: 15px;
                 display: flex;
                 justify-content: space-between;
+                ul{
+                    width: 50%;
+                }
     
                 li{
                     margin: 5% 0;
+                    display: flex;
+                    align-items: center;
                 }
             }
             #tailored{

@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom'
 const Ready = () => {
   return (
     <section className="ready">
-        <Link className='headlink' to={'/services'}>Ready to get the care you need?</Link>
-        <p>Help us understand your care needs. Then we’ll set up a free phone consultation so you can get the right support and services to live and age successfully at home.</p>
+        <Link className='headlink' to={'/care'}>Experience high quality care with us.</Link>
+        <p>We all deserve to be taken care of, and at Amazing Pearl, we are here to provide you with the best care possible. Whatever care you need, we are ready to assist you.</p>
         <Link to={'/care'} id='readylink' >Get Started</Link>
     </section>
   )

@@ -46,7 +46,7 @@ const Faq = () => {
       <h1>Frequently Asked Questions</h1>
       <div className="line"></div>
       {data.map((item, i)=>(
-        <div className="item">
+        <div className="faqitem">
           <div className={selected === i ? 'title df show' : 'title df'} onClick={() => toggle(i)}>
             <h2>{item.question}</h2>
             <span>{selected === i ? '-' : '+'}</span>

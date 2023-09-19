@@ -25,6 +25,8 @@ import image4 from '../../img/img4.jpg'
 import image5 from '../../img/img5.jpg'
 import image6 from '../../img/img6.jpg'
 import {motion} from 'framer-motion'
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import Ready from '../../components/ready/Ready'
 
 const Adults = () => {
   return (
@@ -42,18 +44,17 @@ const Adults = () => {
           <div className="slide"><Slide img1={image1} img2={image2} img3={image3} img4={image4} img5={image5} img6={image6}  /></div>
         </header>
         <main>
-          <section className='homeabout'>
-            <h1>We offer more than great caregivers. We’ll be your expert guide along this journey.</h1>
-            <p>Whether you need respite care, a little help at home to live independently, or 24/7 care, we can design a personalized Care Plan that meets your needs and budget. Every caregiver is expertly trained and backed by a dedicated Care Team of in-house experts. So you’ll get the care you need and the support you deserve—and always stay informed and in control.</p>
+        <section className='kids'>
+            <div className="left">
+              <h1>Why take care of the Elderly?</h1>
+              <div className="line"></div>
+              <p>Learn more about our new mission, our collective passion for caring for older adults and their families—and our vision to change how the world lives and ages at home.</p>
+            </div>
           </section>
           <img src={random} className='img' alt="" />
-          <section className="ready">
-            <Link className='headlink' to={'/services'}>Ready to get the care you need?</Link>
-            <p>Help us understand your care needs. Then we’ll set up a free phone consultation so you can get the right support and services to live and age successfully at home.</p>
-            <Link to={'/services'} id='readylink' >Get Started</Link>
-          </section>
+          <Ready/>
           <section className="homeclients">
-            <h1>Clients trust our caregivers and our service.</h1>
+            <h1>Our clients' experiences.</h1>
             <p className="line"></p>
             <div className="homeclientsay">
               <Homeclient heading='Compassionate, Dedicated, and Hardworking' 
@@ -67,17 +68,7 @@ const Adults = () => {
               cname='A Client’s Son' />
             </div>
           </section>
-          <section className='kids'>
-            <div className="left">
-              <h1>Why take care of the Elderly?</h1>
-              <div className="line"></div>
-              <p>Learn more about our new mission, our collective passion for caring for older adults and their families—and our vision to change how the world lives and ages at home.</p>
-            </div>
-          </section>
-          <section className="different">
-            <h1>What makes Amazing Pearl different?</h1>
-            <p>Quality. Our people. And we really know our business. Every care visit is backed by over 20 years of experience providing over a million hours of exceptional service to families who expect the best care for their loved ones.</p>
-          </section>
+          
           <section className="tailored">
             <div className="left">
               <img src={img2} alt="" />
@@ -87,9 +78,9 @@ const Adults = () => {
               <div className="line"></div>
               <p>It starts with a focus on joy. Before beginning care, we get to know you or your loved one, as a person not a patient, learning about your favorite foods, music, hobbies, passions—the things that bring pleasure and purpose to each day—as well as your care needs. Then we design a personalized Care Plan just for you.</p>
               <ul>
-                <li>Assistance with daily activities</li>
-                <li>Help with personal care</li>
-                <li>Support for meaningful activities and daily engagement</li>
+                <li><TaskAltIcon className='icon'/>Assistance with daily activities</li>
+                <li><TaskAltIcon className='icon'/>Help with personal care</li>
+                <li><TaskAltIcon className='icon'/>Support for meaningful activities and daily engagement</li>
               </ul>
               <Link id='tailored' to={'/care'}><span>Learn More</span>  ></Link>
             </div>
@@ -103,14 +94,14 @@ const Adults = () => {
                 <p>Our proprietary Balanced Care Method™ emphasizes a healthy mind, body, and spirit. This holistic approach focuses on nutrition, engagement, social connection, and overall wellness so our clients can live happier, healthier lives at home.</p>
                 <div className="checks">
                   <ul>
-                    <li>Cognitive stimulation</li>
-                    <li>Physical activity</li>
-                    <li>Social engagement</li>
+                    <li><TaskAltIcon className='icon'/>Cognitive stimulation</li>
+                    <li><TaskAltIcon className='icon'/>Physical activity</li>
+                    <li><TaskAltIcon className='icon'/>Social engagement</li>
                   </ul>
                   <ul>
-                    <li>Nutrition</li>
-                    <li>Sense of calm</li>
-                    <li>Sufficient sleep</li>
+                    <li><TaskAltIcon className='icon'/>Nutrition</li>
+                    <li><TaskAltIcon className='icon'/>Sense of calm</li>
+                    <li><TaskAltIcon className='icon'/>Sufficient sleep</li>
                   </ul>
                 </div>
                 <Link id='tailored' to={'/articles'}><span>Learn More</span>  ></Link>
@@ -135,7 +126,7 @@ const Adults = () => {
           </section>
           <section className="caregivers">
             <div className="left">
-              <h1>Expertly Trained Caregivers</h1>
+              <h1>Our Team of Experts</h1>
               <div className="line"></div>
               <p>We start by hiring great caregivers who genuinely love caring for others. Then we give them the training, tools, and support to be even better care professionals. Every caregiver is our employee—not a contractor, expertly trained by our team and professionally managed to ensure their success and your satisfaction. Since safety is always our top priority, all of our caregivers are interviewed, thoroughly vetted for skills and experience, and background checked.</p>
               <Link id='tailored' to={'/about'}><span>Learn More</span>  ></Link>

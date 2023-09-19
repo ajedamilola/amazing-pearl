@@ -4,20 +4,16 @@ import './mobilekids.scss'
 import '../../scss.scss'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
-import Carousel from '../../components/carousel/Carousel'
 import Slide from '../../components/slide/Slide'
-import random from '../../img/random.webp'
+import random from '../../img/kidspage.jpg'
 import {Link} from 'react-router-dom'
 import Homeclient from '../../components/homeclient/Homeclient'
 import Faq from '../../components/faq/Faq'
-import img2 from '../../img/index2.webp'
-import img3 from '../../img/index3.webp'
-import img4 from '../../img/index4.webp'
+import img2 from '../../img/kid.jpg'
 import img5 from '../../img/index5.webp'
 import img6 from '../../img/index6.webp'
 import img7 from '../../img/index7.webp'
 import img8 from '../../img/index8.webp'
-import Dropdownfaq from '../../components/dropdownfaq/Dropdownfaq'
 import image1 from '../../img/childone.jpg'
 import image2 from '../../img/childtwo.jpg'
 import image3 from '../../img/childthree.jpg'
@@ -25,6 +21,8 @@ import image4 from '../../img/childfour.jpg'
 import image5 from '../../img/childfive.jpg'
 import image6 from '../../img/childsix.jpg'
 import {motion} from 'framer-motion'
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import Ready from '../../components/ready/Ready'
 
 const Kids = () => {
   return (
@@ -42,18 +40,17 @@ const Kids = () => {
           <div className="slide"><Slide img1={image1} img2={image2} img3={image3} img4={image4} img5={image5} img6={image6}  /></div>
         </header>
         <main>
-          <section className='homeabout'>
-            <h1>We offer more than great caregivers. We’ll be your expert guide along this journey.</h1>
-            <p>Whether you need respite care, a little help at home to live independently, or 24/7 care, we can design a personalized Care Plan that meets your needs and budget. Every caregiver is expertly trained and backed by a dedicated Care Team of in-house experts. So you’ll get the care you need and the support you deserve—and always stay informed and in control.</p>
+          <section className='kids'>
+            <div className="left">
+              <h1>Invest in a better tomorrow.</h1>
+              <div className="line"></div>
+              <p>Little kids are the future generation, and it is our duty to provide them with a safe and nuturing environment where they can learn and grow into well rounded imdividuals.</p>
+            </div>
           </section>
           <img src={random} className='img' alt="" />
-          <section className="ready">
-            <Link className='headlink' to={'./services'}>Ready to get the care you need?</Link>
-            <p>Help us understand your care needs. Then we’ll set up a free phone consultation so you can get the right support and services to live and age successfully at home.</p>
-            <Link to={'/services'} id='readylink' >Get Started</Link>
-          </section>
+          <Ready/>
           <section className="homeclients">
-            <h1>Clients trust our caregivers and our service.</h1>
+            <h1>Our clients' experiences.</h1>
             <p className="line"></p>
             <div className="homeclientsay">
               <Homeclient heading='Compassionate, Dedicated, and Hardworking' 
@@ -67,77 +64,29 @@ const Kids = () => {
               cname='A Client’s Son' />
             </div>
           </section>
-          <section className='kids'>
-            <div className="left">
-              <h1>Why take care of little Kids?</h1>
-              <div className="line"></div>
-              <p>Learn more about our new mission, our collective passion for caring for older adults and their families—and our vision to change how the world lives and ages at home.</p>
-            </div>
-          </section>
-          <section className="different">
-            <h1>What makes Amazing Pearl different?</h1>
-            <p>Quality. Our people. And we really know our business. Every care visit is backed by over 20 years of experience providing over a million hours of exceptional service to families who expect the best care for their loved ones.</p>
-          </section>
+          
           <section className="tailored">
             <div className="left">
               <img src={img2} alt="" />
             </div>
             <div className="right">
-              <Link to={'/kids'} className='headlink'>A Care Plan Tailored to Kids</Link>
+              <Link to={'/kids'} className='headlink'>A Care Plan Just For Your Child</Link>
               <div className="line"></div>
-              <p>It starts with a focus on joy. Before beginning care, we get to know you or your loved one, as a person not a patient, learning about your favorite foods, music, hobbies, passions—the things that bring pleasure and purpose to each day—as well as your care needs. Then we design a personalized Care Plan just for you.</p>
+              <p>As parents, we want the best for our kids, and a care plan that meets their unique needs is crucial to archieving that. At Amazing Pearl, we understand that every child is different and needs different care. Our experts caregivers work closely with each family to develop a care plan just for their child. We are here to assist and provide the care your child deserves.</p>
               <ul>
-                <li>Assistance with daily activities</li>
-                <li>Help with personal care</li>
-                <li>Support for meaningful activities and daily engagement</li>
+                <li><TaskAltIcon className='icon'/>Assistance with daily activities</li>
+                <li><TaskAltIcon className='icon'/>Help with personal care</li>
+                <li><TaskAltIcon className='icon'/>Support for meaningful activities and daily engagement</li>
               </ul>
               <Link id='tailored' to={'/kids'}><span>Learn More</span>  ></Link>
             </div>
           </section>
-          <section className="whole">
-            <div className="slimline"></div>
-            <div className="inner">
-              <div className="left">
-                <Link to={'/adults'} className='headlink'>Whole Care for the Whole Person</Link>
-                <div className="line"></div>
-                <p>Our proprietary Balanced Care Method™ emphasizes a healthy mind, body, and spirit. This holistic approach focuses on nutrition, engagement, social connection, and overall wellness so our clients can live happier, healthier lives at home.</p>
-                <div className="checks">
-                  <ul>
-                    <li>Cognitive stimulation</li>
-                    <li>Physical activity</li>
-                    <li>Social engagement</li>
-                  </ul>
-                  <ul>
-                    <li>Nutrition</li>
-                    <li>Sense of calm</li>
-                    <li>Sufficient sleep</li>
-                  </ul>
-                </div>
-                <Link id='tailored' to={'/adults'}><span>Learn More</span>  ></Link>
-              </div>
-              <div className="right">
-                <img src={img3} alt="" />
-              </div>
-            </div>
-            <div className="slimline"></div>
-          </section>
-          <section className="tailored">
-            <div className="left">
-              <img src={img4} alt="" />
-            </div>
-            <div className="right">
-              <Link to={'/join'} className='headlink'>Team-Based Approach to Care</Link>
-              <div className="line"></div>
-              <p>Behind every caregiver is a full-time Care Team of in-house experts, providing oversight and guidance to our caregivers—and support to you and your family.</p>
-              <Dropdownfaq/>
-              <Link id='tailored' to={'/join'}><span>Learn More</span>  ></Link>
-            </div>
-          </section>
+          
           <section className="caregivers">
             <div className="left">
-              <h1>Expertly Trained Caregivers</h1>
+              <h1>Our Team of Experts</h1>
               <div className="line"></div>
-              <p>We start by hiring great caregivers who genuinely love caring for others. Then we give them the training, tools, and support to be even better care professionals. Every caregiver is our employee—not a contractor, expertly trained by our team and professionally managed to ensure their success and your satisfaction. Since safety is always our top priority, all of our caregivers are interviewed, thoroughly vetted for skills and experience, and background checked.</p>
+              <p>As a parent, you want the best for your child, and our team of expert caregivers can provide it. They are trained to specialize in providing high-quality care tailored to child's unique needs. our caregivers have completed. Whether you need in-home care, personal care, or medical management, out expert team of caregivers is here to help. We understand that the care of your child is of the utmost importance and are dedicated to delivering quality care that you can trust.9</p>
               <Link id='tailored' to={'/about'}><span>Learn More</span>  ></Link>
             </div>
             <div className="right">
