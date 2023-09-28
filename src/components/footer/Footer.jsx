@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
@@ -18,9 +18,9 @@ const Footer = () => {
                 <img src={logo} alt="Amazing Pearl Logo" />
             </Link>
             <div id='footsocial'>
-                <Link><FontAwesomeIcon icon={faFacebookF} className='icon' /></Link>
-                <Link><FontAwesomeIcon icon={faLinkedinIn} className='icon' /></Link>
-                <Link><FontAwesomeIcon icon={faTwitter} className='icon' /></Link>
+                <Link to={'https://www.facebook.com/profile.php?id=61551624819703'}><FontAwesomeIcon icon={faFacebookF} className='icon' /></Link>
+                <Link to={'https://www.instagram.com/amazingpearlhomehealthcare/'}><FontAwesomeIcon icon={faInstagram} className='icon' /></Link>
+                <Link to={'https://twitter.com/APHomeHealth'}><FontAwesomeIcon icon={faTwitter} className='icon' /></Link>
             </div>
         </div>
         <footer>
@@ -43,8 +43,8 @@ const Footer = () => {
             <div className="feet">
                 <h2>Get In Touch</h2>
                 <ul>
-                    <li><CallIcon className='icons'/> Toll Free: +12409357172</li>
-                    <li><CallIcon className='icons'/> 12409357172</li>
+                    <li><CallIcon className='icons'/> Toll Free: 2405849454</li>
+                    <li><CallIcon className='icons'/> 2405651472</li>
                     <li><EmailIcon className='icons'/> info@Amazingpearlhomehealth.com</li>
                     <li><LanguageIcon className='icons'/> Amazingpearlhomehealth.com</li>
                 </ul>

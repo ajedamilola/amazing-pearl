@@ -86,7 +86,7 @@ const Contact = () => {
                     <div className="part">
                         <PhoneOutlinedIcon className='icons'/>
                         <h2>TOLL FREE:</h2>
-                        <p>+12409357172 <br /><br /></p>
+                        <p>+12409357172 <br />2405651472</p>
                     </div>
                     <div className="part">
                         <PublicOutlinedIcon className='icons'/>

@@ -19,6 +19,7 @@ import Contact from "./pages/contact/Contact";
 import Findcare from './pages/findcare/Findcare';
 import Services from './pages/services/Services';
 import Articles from './pages/articles/Articles';
+import Kidservice from './components/kidservice/Kidservice';
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
         </Route>
         <Route path="/services">
           <Route index element={<Services />} />
+          <Route path=":id" element={<Services />} />
         </Route>
         <Route path="/articles">
           <Route index element={<Articles />} />

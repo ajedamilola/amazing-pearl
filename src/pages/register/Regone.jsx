@@ -78,6 +78,7 @@ const Regonef = () => {
                   <MenuItem className='menuitem' value={'Myself'}>Myself</MenuItem>
                   <MenuItem className='menuitem' value={'My parents'}>My parents</MenuItem>
                   <MenuItem className='menuitem' value={'My spouse'}>My spouse</MenuItem>
+                  <MenuItem className='menuitem' value={'My child'}>My child</MenuItem>
                   <MenuItem className='menuitem' value={'A friend'}>A friend</MenuItem>
                   <MenuItem className='menuitem' value={'Other'}>Other</MenuItem>
                 </Select>

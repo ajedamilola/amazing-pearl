@@ -1,30 +1,27 @@
-.slide{
-    background-color: var(--bluebg);
-    padding: 2% 0;
-}
 
-.homeabout{
-    text-align: center;
-    padding: 8% 15%;
-    color: var(--blacktext);
-    h1{
-        font-size: 40px;
-        margin-bottom: 5px;
-    }
+.slide.kidslide{
+    background-color: var(--lightbg);
+    padding: 2% 0;
 }
 
 .img{
     width: 100%;
 }
 
+.kidready{
 .ready{
     text-align: center;
     padding: 8% 20%;
-    background-color: var(--golden);
+    background-color: var(--kids);
     color: var(--blacktext);
+    
+    .headlink{
+       font-family: 'Fuzzy Bubbles', cursive; 
+    }
     
     p{
         margin-bottom: 5%;
+        font-family: 'Varela Round', sans-serif;
     }
     #readylink{
         text-decoration: none;
@@ -38,11 +35,16 @@
         border: 1px solid white;
     }
 }
+}
 
-.homeclients{
+.kidhomeclients{
     text-align: center;
     background-color: var(--creambg);
     padding: 5%;
+    h1{
+        color: var(--kids);
+        font-family: 'Fuzzy Bubbles', cursive;
+    }
 
     .line{
         margin: 10px auto;
@@ -53,23 +55,14 @@
         justify-content: space-between;
         align-items: center;
         padding: 2% 0;
-    }
-}
-
-.kids{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .left{
-        width: 50%;
-        padding: 5%;
-        color: var(--bluebg);
-        h1{
-            font-weight: 300;
+        h2,p,h4{
+            color: var(--kidstext);
+            font-family: 'Varela Round', sans-serif;
         }
     }
 }
+
+
 
 .different{
     padding: 5% 15%;
@@ -78,7 +71,7 @@
     text-align: center;
 }
 
-.tailored{
+.kidtailored{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,11 +88,22 @@
         width: 50%;
         padding: 5%;
 
+        .headlink{
+            color: var(--kids);
+            font-family: 'Fuzzy Bubbles', cursive;
+        }
+        p{
+            color: var(--kidstext);
+            font-family: 'Varela Round', sans-serif;
+        }
+
         ul{
             margin: 5% 0;
             font-size: 15px;
             li{
                 margin: 5% 0;
+                color: var(--kidstext);
+                font-family: 'Varela Round', sans-serif;
             }
         }
         #tailored{
@@ -107,6 +111,10 @@
             font-size: 20px;
             color: var(--link);
             text-decoration: none;
+            font-family: 'Fuzzy Bubbles', cursive;
+            span{
+                font-family: 'Fuzzy Bubbles', cursive;
+            }
         }
         #tailored:hover{
             span{
@@ -116,75 +124,74 @@
     }
 }
 
+.kidservices{
+    padding: 5%;
+    text-align: center;
+    h1,h2{
+        font-family: 'Fuzzy Bubbles', cursive;
+    }
+    h1{
+        color: var(--kids);
+        font-weight: 600;
+    }
+    p,h2{
+        color: var(--kidstext);
+    }
+    p{
+        font-family: 'Varela Round', sans-serif;
+        margin: 2% 10% 5%;
+    }
+    h2{
+        margin-top: 2%;
+    }
+    .offers{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 2%;
+        a{
+            width: 21%;
+            padding: 2% 0;
+        }
+
+    }
+}
+
 .slimline{
     height: 1px;
     width: 200px;
     background-color: var(--golden);
     margin: auto;
 }
-.whole{
-    .inner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3% 0;
-    
-        .left{
-            width: 50%;
-            padding: 5%;
-    
-            .checks{
-                margin: 5% 0;
-                font-size: 15px;
-                display: flex;
-                justify-content: space-between;
-    
-                li{
-                    margin: 5% 0;
-                }
-            }
-            #tailored{
-                font-weight: 600;
-                font-size: 20px;
-                color: var(--link);
-                text-decoration: none;
-            }
-            #tailored:hover{
-                span{
-                    text-decoration: underline;
-                }
-            }
-        }
-        .right{
-            width: 50%;
-            padding: 3%;
-            img{
-                width: 100%;
-                border-radius: 3px;
-            }
-        }
-    }
-}
 
-.caregivers{
+.kidcaregivers{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5% 0;
-    background-color: var(--purplebg);
+    background-color: var(--kidservice);
     color: white;
 
     .left{
         width: 50%;
         padding: 5%;
+        h1{
+            font-family: 'Fuzzy Bubbles', cursive;
+        }
         p{
             margin-bottom: 5%;
+            font-family: 'Varela Round', sans-serif;
         }
         #tailored{
             font-weight: 600;
             font-size: 20px;
             color: white;
             text-decoration: none;
+            font-family: 'Fuzzy Bubbles', cursive;
+            span{
+                font-family: 'Fuzzy Bubbles', cursive;
+            }
         }
         #tailored:hover{
             span{
@@ -201,6 +208,17 @@
         }
         td{
             padding: 5px 8px;
+        }
+    }
+}
+@media only screen and ( max-width: 750px ){
+    .kidservices{
+        padding: 5% 2%;
+        .offers{
+            a{
+                width: 100%;
+            }
+    
         }
     }
 }

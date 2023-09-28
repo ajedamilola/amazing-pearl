@@ -17,12 +17,12 @@
     .different{
         padding: 5% 1%;
     }
-    .tailored,.inner,.caregivers,.whole .inner{
+    .kidtailored,.inner,.kidcaregivers,.whole .inner{
         .left,.right{
             width: 100%;
         }
     }
-    .tailored,.caregivers{
+    .kidtailored,.kidcaregivers{
         flex-direction: column;
     }
     .inner{

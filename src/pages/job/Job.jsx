@@ -17,7 +17,7 @@ const Job = () => {
         </div>
         <div className="main">
             <div className="left">
-                <h5>Amazing Pearl</h5>
+                <h2>Amazing Pearl</h2>
                 <h2>Work with us</h2>
                 <p>We are looking for people who are as driven as we are to improve the quality of life for those we serve. It’s an incredibly rewarding mission that our team is dedicated to achieving.
                     Owners, support staff, caregivers and more all play key roles in empowering seniors and adults with disabilities with the support they need to remain in their homes. 
@@ -50,7 +50,7 @@ const Job = () => {
             </motion.div>
         </div>
         <div className="apply">
-            <Link to={'/job/apply'} className='button'><b>Apply Now</b></Link>
+            <Link to={'https://docs.google.com/forms/d/e/1FAIpQLSd4eHY1EvwvIn-nqxAmfp7agJMy74mEDOHk4_xHQnwEru0WhQ/viewform?usp=sf_link'} className='button'><b>Apply Now</b></Link>
         </div>
     
         <Footer/>

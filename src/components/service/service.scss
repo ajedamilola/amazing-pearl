@@ -31,3 +31,11 @@
         display: block;
     }
 }
+
+@media only screen and ( max-width: 750px ){
+    .servicediv{
+        width: 100%;
+        padding: 5%;
+        height: 100%;
+    }
+}

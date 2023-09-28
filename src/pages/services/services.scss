@@ -3,14 +3,25 @@
 }
 .ourservices{
     background-color: var(--creambg);
+    
     h3{
         color: var(--link);
         font-weight: 300;
+        margin-bottom: 3%;
     }
     .about{
         padding-bottom: 0;
         .balanced{
             padding-bottom: 3%;
+            .kidstitle{
+                color: var(--kids);
+                font-weight: 600;
+                font-family: 'Fuzzy Bubbles', cursive;
+            }
+            .kidsx{
+                font-family: 'Varela Round', sans-serif;
+                color: var(--kidstext);
+            }
         }
     }
     .serviceitems{
@@ -47,5 +58,7 @@
 @media only screen and ( max-width: 750px ){
     .serviceitems{
         flex-direction: column;
+        padding: 0 5%;
     }
+    
 }

@@ -13,10 +13,10 @@ import Faq from '../../components/faq/Faq'
 import img2 from '../../img/care.jpg'
 import img3 from '../../img/food.jpg'
 import img4 from '../../img/team.jpg'
-import img5 from '../../img/index5.webp'
-import img6 from '../../img/index6.webp'
-import img7 from '../../img/index7.webp'
-import img8 from '../../img/index8.webp'
+import img5 from '../../img/team1.jpg'
+import img6 from '../../img/team2.jpg'
+import img7 from '../../img/team3.jpg'
+import img8 from '../../img/team4.jpg'
 import Dropdownfaq from '../../components/dropdownfaq/Dropdownfaq'
 import image1 from '../../img/img1.jpg'
 import image2 from '../../img/img2.jpg'
@@ -44,31 +44,6 @@ const Adults = () => {
           <div className="slide"><Slide img1={image1} img2={image2} img3={image3} img4={image4} img5={image5} img6={image6}  /></div>
         </header>
         <main>
-        <section className='kids'>
-            <div className="left">
-              <h1>Why take care of the Elderly?</h1>
-              <div className="line"></div>
-              <p>Learn more about our new mission, our collective passion for caring for older adults and their families—and our vision to change how the world lives and ages at home.</p>
-            </div>
-          </section>
-          <img src={random} className='img' alt="" />
-          <Ready/>
-          <section className="homeclients">
-            <h1>Our clients' experiences.</h1>
-            <p className="line"></p>
-            <div className="homeclientsay">
-              <Homeclient heading='Compassionate, Dedicated, and Hardworking' 
-              words='The 24-hour care that your agency provided for our mom was unparalleled. She had three caregivers, each as compassionate, dedicated, and hardworking as the next. Each caregiver worked eight-hour shifts, which enabled them to stay focused and well-rested, and in turn, provide the best care possible.'
-              cname='A Client’s Daughter' />
-              <Homeclient heading='Loving, Professional, and Honest' 
-              words='We were absolutely thrilled with your agency and caregivers. They provided care to my father who had advanced stage Lewy Body Dementia. The caregivers who provided care for my father were loving, professional, honest, skilled, patient, and kind. I worked as a medical social worker in Geriatrics for years and never came across an agency as good as yours.'
-              cname='Ann W., Herndon, VA' />
-              <Homeclient heading='High Quality Services'
-              words='Your agency has provided quality home care to several of my clients over the years. As a geriatric care manager, I appreciate high-quality services and appropriate follow up to me as the care manager. I would recommend them time and again.'
-              cname='A Client’s Son' />
-            </div>
-          </section>
-          
           <section className="tailored">
             <div className="left">
               <img src={img2} alt="" />
@@ -85,8 +60,25 @@ const Adults = () => {
               <Link id='tailored' to={'/care'}><span>Learn More</span>  ></Link>
             </div>
           </section>
+          <img src={random} className='img' alt="" />
+          <Ready/>
+          <section className="homeclients">
+            <h1>Our clients' experiences.</h1>
+            <p className="line"></p>
+            <div className="homeclientsay">
+              <Homeclient heading='Compassionate, Dedicated, and Hardworking' 
+              words="You are very friendly and very thorough, and you go above and beyond expectations.  You don't complain and always ready and willing to meet my needs. You make me feel good and make me laugh always. You are really nice and easy going. Very efficient at what you do."
+              cname='Ms Tye Mobley' />
+              <Homeclient heading='Loving, Professional, and Honest' 
+              words='We were absolutely thrilled with your agency and caregivers. They provided care to my father who had advanced stage Lewy Body Dementia. The caregivers who provided care for my father were loving, professional, honest, skilled, patient, and kind. I worked as a medical social worker in Geriatrics for years and never came across an agency as good as yours.'
+              cname='Mr Ashar' />
+              <Homeclient heading='High Quality Services'
+              words='Your agency has provided quality home care to several of my clients over the years. As a geriatric care manager, I appreciate high-quality services and appropriate follow up to me as the care manager. I would recommend them time and again.'
+              cname='A Cherished Client' />
+            </div>
+          </section>
+          
           <section className="whole">
-            <div className="slimline"></div>
             <div className="inner">
               <div className="left">
                 <Link to={'/arrticles'} className='headlink'>Whole Care for the Whole Person</Link>
@@ -128,8 +120,8 @@ const Adults = () => {
             <div className="left">
               <h1>Our Team of Experts</h1>
               <div className="line"></div>
-              <p>We start by hiring great caregivers who genuinely love caring for others. Then we give them the training, tools, and support to be even better care professionals. Every caregiver is our employee—not a contractor, expertly trained by our team and professionally managed to ensure their success and your satisfaction. Since safety is always our top priority, all of our caregivers are interviewed, thoroughly vetted for skills and experience, and background checked.</p>
-              <Link id='tailored' to={'/about'}><span>Learn More</span>  ></Link>
+              <p>We start by hiring great caregivers who genuinely love caring for others. Then we give them the training, tools, and support to be even better care professionals. Every caregiver is expertly trained by our team and professionally managed to ensure their success and your satisfaction. Since safety is always our top priority, all of our caregivers are interviewed, thoroughly vetted for skills and experience, and background checked.</p>
+            
             </div>
             <div className="right">
               <table>

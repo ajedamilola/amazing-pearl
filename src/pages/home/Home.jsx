@@ -26,12 +26,13 @@ import image5 from '../../img/img5.jpg'
 import image6 from '../../img/childthree.jpg'
 import Ready from '../../components/ready/Ready'
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import Takekids from '../../components/takekids/Takekids'
 
 const Home = () => {
   const slides = [
-    { title: "Family care,", message: "Get Started", link: './services', color: "orange", words: "Our mission is to provide families with the care they need and deserve. With a team of experts, we'll help you navigate the challenges of caregiving and ensure that your loved ones receive the best possible care."},
+    { title: "Family care,", message: "Get Started", link: './services', color: "orange", words: "Our mission is to provide families, both pediatrics and adults, with the care they need and deserve. With a team of experts, we'll help you navigate the challenges of caregiving and ensure that your loved ones receive the best possible care."},
     { title: "Elderly care,", message: "Find care", link: './adults', color: "grey", words: "Our mission is to provide adults with the care they need and deserve. Whether you're looking for in-home services, assitance with mobility, or just someone to talk to, we're here to help." },
-    { title: "Kids care,", message: "Check it out", link: './kids', color: "pink", words: "Our mission is to provide comprehensive and passionate care to kids. WHether you're looking for physical therapy, assistance with cognitive development, or just someone to talk to, we're here to help."  },
+    { title: "Kids care,", message: "Check it out", link: './kids', color: "pink", words: "Our mission is to provide comprehensive and passionate care to kids. Whether you're looking for physical therapy, assistance with cognitive development, or just someone to talk to, we're here to help."  },
   ];
   return (
     <div>
@@ -52,35 +53,29 @@ const Home = () => {
             <p className="line"></p>
             <div className="homeclientsay">
               <Homeclient heading='Compassionate, Dedicated, and Hardworking' 
-              words='The 24-hour care that your agency provided for our mom was unparalleled. She had three caregivers, each as compassionate, dedicated, and hardworking as the next. Each caregiver worked eight-hour shifts, which enabled them to stay focused and well-rested, and in turn, provide the best care possible.'
-              cname='A Client’s Daughter' />
+              words="You are very friendly and very thorough, and you go above and beyond expectations.  You don't complain and always ready and willing to meet my needs. You make me feel good and make me laugh always. You are really nice and easy going. Very efficient at what you do."
+              cname='Ms Tye Mobley' />
               <Homeclient heading='Loving, Professional, and Honest' 
               words='We were absolutely thrilled with your agency and caregivers. They provided care to my father who had advanced stage Lewy Body Dementia. The caregivers who provided care for my father were loving, professional, honest, skilled, patient, and kind. I worked as a medical social worker in Geriatrics for years and never came across an agency as good as yours.'
-              cname='Ann W., Herndon, VA' />
+              cname='Mr Ashar' />
               <Homeclient heading='High Quality Services'
               words='Your agency has provided quality home care to several of my clients over the years. As a geriatric care manager, I appreciate high-quality services and appropriate follow up to me as the care manager. I would recommend them time and again.'
-              cname='A Client’s Son' />
+              cname='A Cherished Client' />
             </div>
           </section>
-          <section className='kids'>
-            <div className="left">
-              <h1>Invest in a better tomorrow.</h1>
-              <div className="line"></div>
-              <p>Little kids are the future generation, and it is our duty to provide them with a safe and nuturing environment where they can learn and grow into well rounded imdividuals.</p>
-            </div>
-          </section>
+          <Takekids/>
           <section className="different">
             <h1>What makes Amazing Pearl different?</h1>
-            <p>Amazing pearl is a Residential Service Agency that aims to improve the quality of life of our clients through the delivery of amazing excellent cpmpassionate care and extraordinary services in the comfort of their homes while being recognized as an employer of first choice. Our mission is to create a compassionate and comfortable enviroment for both the adults and pediatrics entrusted in our care and foster a healthy relationship amongst them and their family.</p>
+            <p>Amazing pearl is a Residential Service Agency that aims to improve the quality of life of our clients, both pediatrics and adults, through the delivery of amazing excellent compassionate care and extraordinary services in the comfort of their homes while being recognized as an employer of first choice. Our mission is to create a compassionate and comfortable enviroment for both the adults and pediatrics entrusted in our care and foster a healthy relationship amongst them and their family.</p>
           </section>
-          <section className="tailored">
+          <section className="kidtailored">
             <div className="left">
               <img src={img2} alt="" />
             </div>
             <div className="right">
               <Link to={'/kids'} className='headlink'>A Care Plan Just For Your Child</Link>
               <div className="line"></div>
-              <p>As parents, we want the best for our kids, and a care plan that meets their unique needs is crucial to archieving that. At Amazing Pearl, we understand that every child is different and needs different care. Our experts caregivers work closely with each family to develop a care plan just for their child. We are here to assist and provide the care your child deserves.</p>
+              <p>As parents, we want the best for our children, and a care plan that meets their unique needs is crucial to archieving that. At Amazing Pearl, we understand that every child is different and needs different care. Our experts caregivers work closely with each family to develop a care plan just for their child. We are here to assist and provide the care your child deserves.</p>
               <ul>
                 <li><TaskAltIcon className='icon'/>Assistance with daily activities</li>
                 <li><TaskAltIcon className='icon'/>Help with personal care</li>
@@ -132,8 +127,8 @@ const Home = () => {
             <div className="left">
               <h1>Our Team of Experts</h1>
               <div className="line"></div>
-              <p>We believe there’s more to caring for people than just providing in-home assistance. For decades, families have trusted Amzing Pearl for our expert guidance and experience to help them navigate every step of the aging journey.</p>
-              <Link id='tailored' to={'/about'}><span>Learn More</span>  ></Link>
+              <p>We start by hiring great caregivers who genuinely love caring for others. Then we give them the training, tools, and support to be even better care professionals. Every caregiver is expertly trained by our team and professionally managed to ensure their success and your satisfaction. Since safety is always our top priority, all of our caregivers are interviewed, thoroughly vetted for skills and experience, and background checked.</p>
+             
             </div>
             <div className="right">
               <table>

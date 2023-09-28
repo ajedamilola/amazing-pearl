@@ -36,7 +36,7 @@ const Sign = () => {
                         <input type="tel" />
                     </div>
                     <div className="details">
-                        <label htmlFor="">Password*:</label><br />
+                        <label htmlFor="" >Password*:</label><br />
                         <input type="password" />
                     </div>
                     <Link to={'/register/stepone'} ><input id='reg' type="submit" value='Register' /></Link>

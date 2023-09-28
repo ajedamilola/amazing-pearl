@@ -2,7 +2,6 @@ import React from 'react'
 import './findcare.scss'
 import {Link} from 'react-router-dom'
 import Navbar from '../../components/navbar/Navbar'
-import Ready from '../../components/ready/Ready'
 import img3 from '../../img/food.jpg'
 import Footer from '../../components/footer/Footer'
 import Zipform from '../../components/zipform/Zipform'
@@ -27,7 +26,6 @@ const Findcare = () => {
             </div>
             <div className="slimline"></div>
           </section>
-        <Ready/>
         <Footer/>
     </div>
   )

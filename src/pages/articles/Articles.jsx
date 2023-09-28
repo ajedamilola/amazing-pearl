@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import {Link} from 'react-router-dom'
-import header from '../../img/articles.jpg'
+import header from '../../img/articles.png'
 import oldman from '../../img/oldman.png'
 import article1 from '../../img/article1.png'
 import article2 from '../../img/article2.png'
@@ -36,7 +36,7 @@ const Articles = () => {
   return (
     <div>
       <Navbar/>
-      <header className='articlesheader'>
+      <header className='articlesheader'  id='featured'>
         <div className="left">
           <h1>Find the Best Article regarding your Loved One</h1>
           <div className="line"></div>
@@ -50,18 +50,17 @@ const Articles = () => {
         <h1>Popular Articles</h1>
         <div className="latest">
             { latest.map((fill, i)=>(
-                <Article img={fill.img} title={fill.title} words={fill.words} link={fill.link} />
+                <Article img={fill.img} title={fill.title} words={fill.words} />
             ))}
         </div>
-        <div className="featured">
+        <div className="featured" >
             <div className="left">
                 <motion.div initial={{ x: '-50%'}} whileInView={{ x: '0'}} transition={{duration: .5, type: 'spring'}}> <span>Featured Article</span> </motion.div>
                 <div><img src={oldman} alt="" /></div>
             </div>
             <div className="right">
                 <h2>Caring for a Loved One With Aphasia</h2>
-                <h4>Learn more about aphasia, the limitations it can cause, and how you can help a loved one.</h4>
-                <Link>Learn More</Link>
+                <h4>Aphasia is a language disorder that affects the ability to comprehend and express speech, both verbally and written. As aphasia is a chronic disorder, it is essential that caregivers learn how to effectively communicate with their loved ones. That's where we come in. Our expert team of professionals is trained in aphasia and can provide a range of services to help your loved one live their best life. From speech and language therapy to assisted living and in-home care, we are dedicated to providing the highest level of quality care. Our goal is to support people with aphasia and their caregivers in navigating the challenges of each day. With the right care and support, we can make a significant difference in the quality of life of your loved one with aphasia.</h4>
             </div>
         </div>
       </section>
