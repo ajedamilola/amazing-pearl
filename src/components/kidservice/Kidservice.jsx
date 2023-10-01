@@ -2,12 +2,9 @@ import React, { useState } from 'react'
 import './kidservice.scss'
 import service1 from '../../img/service-1.png'
 import service2 from '../../img/service-2.png'
-import service3 from '../../img/service-3.png'
 import service4 from '../../img/service-4.png'
 import service5 from '../../img/service-5.png'
 import service6 from '../../img/service-6.png'
-import service7 from '../../img/service-7.png'
-import service8 from '../../img/service-8.png'
 
 
 const data = [
@@ -22,12 +19,6 @@ const data = [
       img: service2,
       question: 'INTRAVENOUS THERAPY',
       answer: 'Pediatric Intravenous Therapy involves skilled nursing care to assist families in administering intravenous products and medications. Therapies include but are not limited to antibiotics, anticoagulants, biologicals, blood clotting factor, catheter care, chemotherapy, enteral therapy, growth hormone, hydration, inotropic therapy, pain management, steroids, transplant therapies and total parenteral nutrition.'
-    },
-    {
-      id:'three',
-      img: service3,
-      question: 'MEDICAL SOCIAL SERVICES',
-      answer: 'Our Medical social workers help patients and their families cope with the emotional and social responses to illness and treatment. They also educate patients and their families on entitlements, community resources, and health insurance coverage, in an effort to enhance social functioning and overall well-being. We assess the psychosocial functioning of patients and families and intervene as necessary to restore balance in an individual’s personal, family and social life, in order to help that person maintain or recover his/her health and strengthen his/her ability to adapt and reintegrate into society.'
     },
     {
       id:'four',
@@ -46,18 +37,6 @@ const data = [
       img: service6,
       question: 'SKILLED NURSING SERVICES',
       answer: 'At Amazing Pearl, our clinical team goes to great lengths to ensure a perfect match between each child and their clinician, with priority given to medical need and cultural compatibility. Depending on your child’s plan of care and your insurance coverage, we can provide one-on-one nursing — also called Private Duty Nursing or PDN — up to 24 hours a day, giving you peace of mind while you sleep, work, and do all the things you need to do.'
-    },
-    {
-      id:'seven',
-      img: service7,
-      question: 'SPEECH LANGUAGE PATHOLOGY',
-      answer: 'Speech-Language Pathologists (SLP) address communication and swallowing disorders in patients. If a child has trouble comprehending or expressing spoken or written language, a speech-language pathologist can help. SLPs help a child understand and use vocabulary, grammar, and the social aspects of language and metalinguistic skills. Some children respond to traditional therapy interventions while others may benefit from use of an alternative or augmentative communication system. SLPs also assist children with articulation, voice, and fluency disorders. All children develop the sounds that make up words at different rates. However, when a child’s development in this area falls below developmental norms or affects his or her ability to be understood, an articulation disorder may be suspected.'
-    },
-    {
-      id:'eight',
-      img: service8,
-      question: 'OCCUPATIONAL THERAPY',
-      answer: 'Occupational therapy focuses on supporting and encouraging children with engagement in meaningful activities of daily life (such as self-care skills, education, work, or social interaction) especially to enable or encourage participation in such activities despite impairments or limitations in physical or mental functioning. Our Pediatric Occupational Therapist (OT) interventions include helping children with disabilities to participate fully in school and social situations, helping people recovering from injury to regain skills, and providing supports for children and adolescents experiencing physical and cognitive changes. Our Occupational Therapist and practitioners work to enable children of all ages to live life to its fullest by promoting health living, and preventing or managing injury, illness, or disability.'
     },
   ]
 

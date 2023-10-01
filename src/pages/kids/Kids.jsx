@@ -15,9 +15,9 @@ import img6 from '../../img/team2.jpg'
 import img7 from '../../img/team3.jpg'
 import img8 from '../../img/team4.jpg'
 import image1 from '../../img/childone.jpg'
-import image2 from '../../img/childtwo.jpg'
-import image3 from '../../img/childthree.jpg'
-import image4 from '../../img/childfour.jpg'
+import image2 from '../../img/childbg2.jpg'
+import image3 from '../../img/childthree2.jpg'
+import image4 from '../../img/childfour2.jpg'
 import image5 from '../../img/childfive.jpg'
 import image6 from '../../img/childsix.jpg'
 import {motion} from 'framer-motion'
@@ -25,12 +25,9 @@ import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import Ready from '../../components/ready/Ready'
 import service1 from '../../img/service-1.png'
 import service2 from '../../img/service-2.png'
-import service3 from '../../img/service-3.png'
 import service4 from '../../img/service-4.png'
 import service5 from '../../img/service-5.png'
 import service6 from '../../img/service-6.png'
-import service7 from '../../img/service-7.png'
-import service8 from '../../img/service-8.png'
 import Takekids from '../../components/takekids/Takekids'
 
 const Kids = () => {
@@ -100,28 +97,16 @@ const Kids = () => {
                 <h2>INTRAVENOUS THERAPY</h2>
               </Link>
               <Link to={'/services/2'}>
-                <img src={service3} alt="" />
-                <h2>MEDICAL SOCIAL SERVICES</h2>
-              </Link>
-              <Link to={'/services/3'}>
                 <img src={service4} alt="" />
                 <h2>PERSONAL CARE AIDE</h2>
               </Link>
-              <Link to={'/services/4'}>
+              <Link to={'/services/3'}>
                 <img src={service5} alt="" />
                 <h2>PHYSICAL THERAPY</h2>
               </Link>
-              <Link to={'/services/5'}>
+              <Link to={'/services/4'}>
                 <img src={service6} alt="" />
                 <h2>SKILLED NURSING SERVICES</h2>
-              </Link>
-              <Link to={'/services/6'}>
-                <img src={service7} alt="" />
-                <h2>SPEECH LANGUAGE PATHOLOGY</h2>
-              </Link>
-              <Link to={'/services/7'}>
-                <img src={service8} alt="" />
-                <h2>OCCUPATIONAL THERAPY</h2>
               </Link>
             </div>
           </section>

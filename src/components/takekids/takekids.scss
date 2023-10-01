@@ -18,7 +18,16 @@
         }
     }
     .right{
-        width: 50%;
-        padding-right: 5%;
+
+        #video{
+            width: -webkit-fill-available;
+        }
+        .rh5v-DefaultPlayer_controls{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2%;
+            justify-content: space-between;
+            align-items: baseline;
+        }
     }
 }
