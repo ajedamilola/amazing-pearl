@@ -66,7 +66,7 @@ const Home = () => {
           <Takekids/>
           <section className="different">
             <h1>What makes Amazing Pearl different?</h1>
-            <p>Amazing pearl is a Residential Service Agency that aims to improve the quality of life of our clients, both pediatrics and adults, through the delivery of amazing excellent compassionate care and extraordinary services in the comfort of their homes while being recognized as an employer of first choice. Our mission is to create a compassionate and comfortable enviroment for both the adults and pediatrics entrusted in our care and foster a healthy relationship amongst them and their family.</p>
+            <p>Amazing pearl is a Residential Service Agency that aims to improve the quality of life of our clients, both pediatrics and adults, through the delivery of amazing excellent compassionate care and extraordinary services in the comfort of their homes while being recognized as an employer of first choice. Our mission is to create a compassionate and comfortable environment for both the adults and pediatrics entrusted in our care and foster a healthy relationship amongst them and their family.</p>
           </section>
           <section className="kidtailored">
             <div className="left">

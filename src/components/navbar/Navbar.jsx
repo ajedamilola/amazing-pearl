@@ -51,7 +51,7 @@ const Navbar = () => {
                 <li><NavLink to={'/job'} className='navlinks link'>Find job</NavLink></li>
                 <li><NavLink to={'/articles'} className='navlinks link'>Articles</NavLink></li>
                 <li><NavLink to={'/about'} className='navlinks link'>About Us</NavLink></li>
-                <li><NavLink to={'/'} className='navlinks link dail'>+12409357172</NavLink></li>
+                <li><NavLink to={'/'} className='navlinks link dail'>2405651472</NavLink></li>
             </ul>
             
         </nav>

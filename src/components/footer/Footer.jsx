@@ -25,26 +25,28 @@ const Footer = () => {
         </div>
         <footer>
             <div className="feet">
-                <h2>Important Links</h2>
+                <h2>Quick Links</h2>
                 <ul>
-                    <li><Link className='footlink' to={'/about'}>WHO WE SERVE</Link></li>
-                    <li><a href="">PRODUCTS</a></li>
-                    <li><a href="">WHAT WE DO</a></li>
+                    <li><Link className='footlink' to={'/kids'}>PEDIATRIC CARE</Link></li>
+                    <li><Link className='footlink' to={'/adults'}>ELDERLY CARE</Link></li>
+                    <li><Link className='footlink' to={'/services'}>WHO WE SERVE</Link></li>
+                    <li><Link className='footlink' to={'/about'}>WHAT WE DO</Link></li>
                 </ul>
             </div>
             <div className="feet">
                 <h2>Important Links</h2>
                 <ul>
-                    <li><a href="">GET A QUOTE</a></li>
+                    <li><Link className='footlink' to={'/join'}>JOIN US</Link></li>
+                    <li><Link className='footlink' to={'/articles'}>NEWS</Link></li>
                     <li><Link className='footlink' to={'/contact'}>CONTACT US</Link></li>
-                    <li><a href="">ISO CERTIFICATION</a></li>
+                    <li><Link className='footlink' to={'/job'}>WORK WITH US</Link></li>
                 </ul>
             </div>
             <div className="feet">
                 <h2>Get In Touch</h2>
                 <ul>
-                    <li><CallIcon className='icons'/> Toll Free: 2405849454</li>
                     <li><CallIcon className='icons'/> 2405651472</li>
+                    <li><CallIcon className='icons'/> 2405849454</li>
                     <li><EmailIcon className='icons'/> info@Amazingpearlhomehealth.com</li>
                     <li><LanguageIcon className='icons'/> Amazingpearlhomehealth.com</li>
                 </ul>

@@ -11,7 +11,6 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
@@ -48,11 +47,11 @@ const Contact = () => {
             <div className="details">
                 <div className="inner">
                     <div className="dicon"><PhoneOutlinedIcon className='icons'/> <h3>CALL US</h3></div>
-                    <p>12409357172</p>
+                    <p>2405651472</p>
                 </div>
                 <div className="inner">
                     <div className="dicon"><PublicOutlinedIcon className='icons'/> <h3>LOCATION</h3></div>
-                    <p>www.netlify.amazing-pearls.app</p>
+                    <p>Amazingpearlhomehealth.com</p>
                 </div>
                 <div className="inner">
                     <div className="dicon"><QueryBuilderOutlinedIcon className='icons'/> <h3>BUSINESS HOURS</h3></div>
@@ -72,10 +71,9 @@ const Contact = () => {
                         <h2>FOLLOW US</h2>
                         <p id='followp' >Follow us to see more of what we do, help or join the team.</p>
                         <div className="soical">
-                            <Link><FontAwesomeIcon icon={faFacebookF} className='icon' /></Link>
-                            <Link><FontAwesomeIcon icon={faInstagram} className='icon' /></Link>
-                            <Link><FontAwesomeIcon icon={faLinkedinIn} className='icon' /></Link>
-                            <Link><FontAwesomeIcon icon={faTwitter} className='icon' /></Link>
+                            <Link to={'https://www.facebook.com/profile.php?id=61551624819703'}><FontAwesomeIcon icon={faFacebookF} className='icon' /></Link>
+                            <Link to={'https://www.instagram.com/amazingpearlhomehealthcare/'}><FontAwesomeIcon icon={faInstagram} className='icon' /></Link>
+                            <Link to={'https://twitter.com/APHomeHealth'}><FontAwesomeIcon icon={faTwitter} className='icon' /></Link>
                         </div>
                     </div>
                     <div className="part">
@@ -85,13 +83,13 @@ const Contact = () => {
                     </div>
                     <div className="part">
                         <PhoneOutlinedIcon className='icons'/>
-                        <h2>TOLL FREE:</h2>
-                        <p>+12409357172 <br />2405651472</p>
+                        <h2>PHONE:</h2>
+                        <p>2405651472 <br />2405849454</p>
                     </div>
                     <div className="part">
                         <PublicOutlinedIcon className='icons'/>
                         <h2>ADDRESS:</h2>
-                        <p>www.netlify.amazing-pearl.app</p>
+                        <p>amazingpearlnew.netlify.app</p>
                     </div>
                 </div>
             </div>
