@@ -48,14 +48,15 @@
             font-weight: 600;
             font-size: 20px;
         }
-        input{
+        input,textarea, select{
             border: 2px solid var(--yellow);
             border-radius: 4px;
-            margin: 5% 0;
+            // margin: 5% 0;
             padding: 3%;
             background: transparent;
             color: white;
             width: 100%;
+            margin-bottom: 15px;
         }
         input#reg{
             background-color: var(--yellow);

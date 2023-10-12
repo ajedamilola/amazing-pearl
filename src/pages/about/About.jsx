@@ -16,6 +16,7 @@ import about9 from '../../img/about9.jpg'
 import img4 from '../../img/team.jpg'
 import Homeclient from '../../components/homeclient/Homeclient'
 import Takekids from '../../components/takekids/Takekids'
+import { Button } from '@mui/material'
 
 const About = () => {
   return (
@@ -110,7 +111,7 @@ const About = () => {
                 <h1>Join Our Community</h1>
                 <p className="line"></p>
                 <p>Behind every Amazing Pearl caregiver is a dedicated Care Team providing guidance and support 24/7. Overseen by a Client Care Manager, your team will include specialists who handle everything from scheduling care visits to designing and updating your Care Plan. <br /><br />Working collaboratively and drawing on our experience, we’re able to anticipate changes in care needs, prevent avoidable issues, and enhance the overall care experience for clients and their loved ones.</p>
-                <Link className='plink' to={'/join'}><span>Learn more about our Care Team </span>  ></Link>
+                <Link className='plink' to={'/join'}><Button className='readylink' variant='contained' color='warning'>Join Us</Button></Link>
             </div>
         </div>
         <section className="whole" id='caregivers'>

@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className={color ? 'navbar navbarbg' : 'navbar'} id={nav === 1 ? 'nav'  : ''}>
         <div className="hat">
-            <p>Looking for Amazing Pearl Assistance? You are in the right place! <NavLink id='search' to={'/care'}>Search for your local office</NavLink></p>
+            <p>Looking for Amazing Pearl Assistance? <NavLink id='search' to={'/join'}>Join to find your caregiver</NavLink></p>
         </div>
         <nav>
             <div style={{display: 'flex', alignItems: 'center'}}>
