@@ -51,7 +51,7 @@ const Sign = () => {
                         }
                     }}>
                         <div className="details">
-                            <label htmlFor="">First Name Here*:</label><br />
+                            <label htmlFor="">First Name*:</label><br />
                             <input required type="text" value={form.name} name="name" onChange={handleChange} />
                         </div>
                         <div className="details">
