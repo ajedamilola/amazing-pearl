@@ -34,7 +34,7 @@ const Sign = () => {
                         Object.keys(form).forEach(key => data.append(key, form[key]))
                         Loading.standard("Seding registration request")
                         try {
-                            const { err } = (await axios.post("/beneficiary", data, { withCredentials: true })).data
+                            const { err } = (await axios.post("/api/beneficiary", data, { withCredentials: true })).data
                             if (!err) {
                                 Report.success("Success", `Registration successful please store the following info in a safe place email:${form.email} password:${form.password}`, "Copy Details", () => {
                                     navigator.clipboard.writeText(`email:${form.email} password:${form.password}`)
